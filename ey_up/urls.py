@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from pup_review import views as index_views
+from cafes import views as cafe_views
 
 urlpatterns = [
-    path('', index_views.index, name='index'),
+    path('home/', index_views.index, name='index'),
+    path('cafes/', cafe_views.pup_cafes, name='cafes'),
     path('admin/', admin.site.urls),
 ]
