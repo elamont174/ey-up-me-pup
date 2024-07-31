@@ -1,0 +1,1 @@
+web: gunicorn ey_up.wsgi
