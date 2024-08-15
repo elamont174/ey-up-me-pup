@@ -35,6 +35,6 @@
 ### Forking
 
 ## Credits
-- [Destiny Franks(Desphixs)](https://www.youtube.com/@desphixs) YouTube tutorials helped me to learn the code to implement my 'paws rating' system.
+- [Destiny Franks(Desphixs)](https://www.youtube.com/watch?v=gBJMM3ZQLpk) YouTube tutorial helped me to learn the code to implement my 'paws' rating system.
 
 ## Acknowledgements
