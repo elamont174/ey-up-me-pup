@@ -11,8 +11,8 @@
 <body>
     <h1>Pup Reviews</h1>
     {% for post in object_list %}
-    <h2>{{post.title}}</h2>
-    <p>{{post.excerpt}}</p>
+    <h2>{{post.location_name}}</h2>
+    <p>{{post.review_content}}</p>
     <p>Author: {{post.author}}</p>
     {% endfor %}
 </body>
