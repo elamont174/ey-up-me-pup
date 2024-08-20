@@ -7,8 +7,8 @@ class PostAdmin(SummernoteModelAdmin):
 
     list_display = ('location_name', 'slug', 'status')
     search_fields = ['location_name']
-    list_filter = ('status',)
-    prepopulated_fields = {'slug': ('location_name',)}
+    list_filter = ('type',)
+    prepopulated_fields = {'slug': ('review_tagline',)}
     summernote_fields = ('review_content',)
 
 # Register your models here.

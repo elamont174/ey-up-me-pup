@@ -3,15 +3,18 @@ from django.contrib.auth.models import User
 
 STATUS = ((0, "Draft"), (1, "Published"))
 RATING = ((1,"1🐾"),(2,"2🐾"),(3,"3🐾"),(4,"4🐾"),(5,"5🐾"))
+TYPE = ((0, "Pub"), (1, "Café"), (2, "Other"))
 
 
 
 # Create your models here.
 class Post(models.Model):
     location_name = models.CharField(max_length=200, unique=False)
+    review_tagline = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="pup_review_posts")
     rating = models.IntegerField(choices=RATING, default=None)
+    type = models.IntegerField(choices=TYPE, default=2)
     review_content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -21,4 +24,4 @@ class Post(models.Model):
         ordering = ["location_name"]
 
     def __str__(self):
-        return f"{self.location_name}"
+        return f"{self.location_name}: {self.review_tagline}"
