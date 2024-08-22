@@ -9,10 +9,9 @@ TYPE = ((0, "Pub"), (1, "Café"), (2, "Other"))
 
 # Create your models here.
 class Post(models.Model):
-    location_name = models.CharField(max_length=200, unique=False)
-    review_tagline = models.CharField(max_length=200, unique=True)
+    location_name = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="pup_review_posts")
+    pup_team = models.ForeignKey(User, on_delete=models.CASCADE, related_name="pup_review_posts")
     rating = models.IntegerField(choices=RATING, default=None)
     type = models.IntegerField(choices=TYPE, default=2)
     review_content = models.TextField()
@@ -24,4 +23,19 @@ class Post(models.Model):
         ordering = ["location_name"]
 
     def __str__(self):
-        return f"{self.location_name}: {self.review_tagline}"
+        return f"{self.location_name}"
+
+
+class Comment(models.Model):
+    location = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="user_reviews")
+    reviewer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_reviews_reviewer")
+    your_rating = models.IntegerField(choices=RATING, default=None)
+    your_review = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["created_on"]
+
+    def __str__(self):
+        return f"{self.body} by {self.reviewer}"

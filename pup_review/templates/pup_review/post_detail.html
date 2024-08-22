@@ -5,14 +5,12 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">{{ post.location_name }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                <h1 class="post-location_name">{{ post.location_name }}</h1>
+                <p class="post-subtitle">Pup team writer: {{ post.pup_team }}  |  Rating: {{ post.rating }}🐾</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
+            <!--<div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/notts_puppy.webp' %}" class="scale" alt="picture of puppy in Nottingham (AI generated)">
-            </div>
+            </div>-->
         </div>
     </div>
 </div>
@@ -23,12 +21,50 @@
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
-                    {{ post.review_content | safe }}
-                </p>
+                <p class="card-text">{{ post.review_content | safe }}</p>
+              </div>
             </div>
+          </div>
+          <!-- Displaying count of comments -->
+          <div class="row">
+            <div class="col-12">
+              <strong class="text-secondary">
+                <i class="far fa-comments"></i> {{ user_review_count }}
+              </strong>
+            </div>
+            <div class="col-12">
+              <hr>
+            </div>
+          </div>
+          <!-- Displaying Comments -->
+          <div class="row">
+            <div class="col-md-8 card mb-4  mt-3 ">
+              <h3>Your reviews:</h3>
+              <div class="card-body">
+                <!-- We want a for loop inside the empty control tags
+                  to iterate through each user_review in user_reviews -->
+                {% for user_review in user_reviews %}
+                <div class="p-2 user_reviews
+                  {% if not user_review.approved and user_review.reviewer == user %}
+                  faded{% elif not user_review.approved %} d-none{% endif %}">
+                  <p class="font-weight-bold">
+                    {{ user_review.reviewer }}'s review: {{ user_review.your_rating }}🐾
+                    <span class="font-weight-normal">
+                    </span>
+                  </p>
+                  <div id="user_review{{ user_review.id }}">
+                    {{ user_review.your_review | linebreaks }}
+                  </div>
+                  {% if not user_review.approved and user_review.author == user %}
+                  <p class="approval">
+                    This review is awaiting approval
+                  </p>
+                  {% endif %}
+                </div>
+                <!-- Our for loop ends here -->
+                {% endfor %}
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-
-{% endblock content %}
+        {% endblock content %}
