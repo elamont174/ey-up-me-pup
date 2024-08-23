@@ -1,70 +1,87 @@
 {% extends 'base.html' %} {% block content %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 <div class="masthead">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <h1 class="post-location_name">{{ post.location_name }}</h1>
-                <p class="post-subtitle">Pup team writer: {{ post.pup_team }}  |  Rating: {{ post.rating }}🐾</p>
-            </div>
-            <!--<div class="d-none d-md-block col-md-6 masthead-image">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-md-6 masthead-text">
+        <h1 class="post-location_name">{{ post.location_name }}</h1>
+        <p class="post-subtitle">Pup team writer: {{ post.pup_team }} | Rating: {{ post.rating }}🐾</p>
+      </div>
+      <!--<div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/notts_puppy.webp' %}" class="scale" alt="picture of puppy in Nottingham (AI generated)">
             </div>-->
-        </div>
     </div>
+  </div>
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <!-- The post content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">{{ post.review_content | safe }}</p>
-              </div>
-            </div>
-          </div>
-          <!-- Displaying count of comments -->
-          <div class="row">
-            <div class="col-12">
-              <strong class="text-secondary">
-                <i class="far fa-comments"></i> {{ user_review_count }}
-              </strong>
-            </div>
-            <div class="col-12">
-              <hr>
-            </div>
-          </div>
-          <!-- Displaying Comments -->
-          <div class="row">
-            <div class="col-md-8 card mb-4  mt-3 ">
-              <h3>Your reviews:</h3>
-              <div class="card-body">
-                <!-- We want a for loop inside the empty control tags
+  <div class="row">
+    <div class="col card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <!-- The post content goes inside the card-text. -->
+        <!-- Use the | safe filter inside the template tags -->
+        <p class="card-text">{{ post.review_content | safe }}</p>
+      </div>
+    </div>
+  </div>
+  <!-- Displaying count of user reviews -->
+  <div class="row">
+    <div class="col-12">
+      <strong class="text-secondary">
+        <i class="far fa-comments"></i> {{ user_review_count }}
+      </strong>
+    </div>
+    <div class="col-12">
+      <hr>
+    </div>
+  </div>
+  <!-- Displaying User Reviews -->
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 ">
+      <h3>What other pup owners think!</h3>
+      <div class="card-body">
+        <!-- We want a for loop inside the empty control tags
                   to iterate through each user_review in user_reviews -->
-                {% for user_review in user_reviews %}
-                <div class="p-2 user_reviews
+        {% for user_review in user_reviews %}
+        <div class="p-2 user_reviews
                   {% if not user_review.approved and user_review.reviewer == user %}
                   faded{% elif not user_review.approved %} d-none{% endif %}">
-                  <p class="font-weight-bold">
-                    {{ user_review.reviewer }}'s review: {{ user_review.your_rating }}🐾
-                    <span class="font-weight-normal">
-                    </span>
-                  </p>
-                  <div id="user_review{{ user_review.id }}">
-                    {{ user_review.your_review | linebreaks }}
-                  </div>
-                  {% if not user_review.approved and user_review.author == user %}
-                  <p class="approval">
-                    This review is awaiting approval
-                  </p>
-                  {% endif %}
-                </div>
-                <!-- Our for loop ends here -->
-                {% endfor %}
-              </div>
-            </div>
+          <p class="font-weight-bold">
+            {{ user_review.reviewer }}'s review: {{ user_review.your_rating }}🐾
+            <span class="font-weight-normal">
+            </span>
+          </p>
+          <div id="user_review{{ user_review.id }}">
+            {{ user_review.your_review | linebreaks }}
           </div>
+          {% if not user_review.approved and user_review.reviewer == user %}
+          <p class="approval">
+            This review is awaiting approval
+          </p>
+          {% endif %}
         </div>
-        {% endblock content %}
+        <!-- Our for loop ends here -->
+        {% endfor %}
+      </div>
+    </div>
+    <!-- Creating New User Reviews -->
+    <div class="col-md-4 card mb-4 mt-3">
+      <div class="card-body">
+        {% if user.is_authenticated %}
+        <h3>Leave a review:</h3>
+        <p>Posting as: {{ user.username }}</p>
+        <form id="commentForm" method="post" style="margin-top: 1.3em;">
+          {{ user_review_form | crispy }}
+          {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+        </form>
+        {% else %}
+        <p>Log in to leave a review</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

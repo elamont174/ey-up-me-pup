@@ -35,7 +35,7 @@ class Comment(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ["created_on"]
+        ordering = ["approved"]
 
     def __str__(self):
-        return f"{self.body} by {self.reviewer}"
+        return f"{self.location}/{self.reviewer} Approved:{self.approved} "
