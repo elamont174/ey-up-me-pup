@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
@@ -6,7 +7,7 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Staff review Entries Column -->
+        <!-- Staff Review Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -14,6 +15,12 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
+                                {% if "placeholder" in post.featured_image.url %}
+                                <img class="card-img-top" src="{% static 'images/notts_puppy' %}"
+                                    alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.location_name }}">
+                                {% endif %}
                                 <div class="image-flash">
                                     <p class="pup_team">Pup team: {{ post.pup_team }}</p>
                                 </div>
@@ -23,7 +30,7 @@
                             </a>
 
                             <hr />
-                            
+
                         </div>
                     </div>
                 </div>
