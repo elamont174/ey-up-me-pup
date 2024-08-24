@@ -17,14 +17,19 @@ def post_detail(request, slug):
     post = get_object_or_404(queryset, slug=slug)
     user_reviews = post.user_reviews.all().order_by("-created_on")
     user_review_count = post.user_reviews.filter(approved=True).count()
+    print("we are in post detail view")
     if request.method == "POST":
         user_review_form = CommentForm(data=request.POST)
+        print(user_review_form)
+        print("we are in the post method")
         if user_review_form.is_valid():
+            print("the form is valid")
             user_review = user_review_form.save(commit=False)
             user_review.reviewer = request.user
             user_review.location = post
             user_review.save()
             messages.add_message(request, messages.SUCCESS, 'Your pup review has been submitted for approval!🐕')
+            print("form was submitted")
 
     user_review_form = CommentForm()
 
@@ -47,14 +52,18 @@ def user_review_edit(request, slug, user_review_id):
     """
     view to edit user reviews
     """
+    print("we are in user view edit")
     if request.method == "POST":
 
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         user_review = get_object_or_404(Comment, pk= user_review_id)
         user_review_form = CommentForm(data=request.POST, instance=user_review)
-
+        print(user_review)
+        print(user_review_form)
+        print("we are in view edit post")
         if user_review_form.is_valid() and user_review.reviewer == request.user:
+            print("the form is valid")
             user_review = user_review_form.save(commit=False)
             user_review.location = post
             user_review.approved = False

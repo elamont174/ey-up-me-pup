@@ -79,7 +79,7 @@
         <form id="userReviewForm" method="post" style="margin-top: 1.3em;">
           {{ user_review_form | crispy }}
           {% csrf_token %}
-          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+          <button id="submit-button" type="submit" class="btn btn-signup btn-lg">Submit</button>
         </form>
         {% else %}
         <p>Log in to leave a review</p>
