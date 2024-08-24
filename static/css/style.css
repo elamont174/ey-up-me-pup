@@ -1,0 +1,30 @@
+/* Colour palette
+--tan: #cead87;
+--cocoa-brown: #292220;
+--leather: #926d4c;
+--irish-coffee: #613a29;
+--willow-grove: #646e5c;
+--donkey-brown: #a69e72;
+--copper: #bd8130;
+--cape-cod: #3a4b46;
+--regent-gray: #8392a5;
+--san-juan: #38526d;
+*/
+
+
+.bg-color-title {
+    background-colour: #3a4b46;
+}
+
+header {
+    margin: 0;
+}
+
+.logo {
+    background: url("../images/notts_dogs.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+}
+

@@ -9,10 +9,13 @@
 <html class="h-100" lang="en">
 
 <head>
-    <title>Ey Up Me Pup</title>
+    <title>Ey Up Me Pup!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Google Fonts CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -26,23 +29,41 @@
 
 </head>
 
+<header>
+    <div class="row no-gutters">
+        <a href="{% url 'home' %}" class="col-md-4 logo"></a>
+        <div class="col-md-8">
+            <div class="row no-gutters bg-color-title">
+                <div class="col heading">
+                    <h1 class="title">Ey Up Me Pup!</h1>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col">
+                    <ul id="nav" class="list-inline menucontainer">
+                        {% if user.is_authenticated %}
+                        <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                            <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'account_logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                            <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'account_signup' %}">Register</a>
+                        </li>
+                        <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                            <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'account_login' %}">Login</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
 
-<!-- Navigation -->
-{% if user.is_authenticated %}
-<li class="nav-item">
-    <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-        href="{% url 'account_logout' %}">Logout</a>
-</li>
-{% else %}
-<li class="nav-item">
-    <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-        href="{% url 'account_signup' %}">Register</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
-        href="{% url 'account_login' %}">Login</a>
-</li>
-{% endif %}
+        </div>
+    </div>
+</header>
+
 <!-- displaying Django messages -->
 <div class="container">
     <div class="row">
@@ -58,20 +79,30 @@
 </div>
 
 
-<main>
+<main class="flex-shrink-0 main-bg">
 
     {% block content %}
     <!-- Content Goes here -->
     {% endblock content %}
 
 </main>
-{% if user.is_authenticated %}
-<p class="text-end m-3">You are logged in as {{ user }}</p>
-{% else %}
-<p class="text-end m-3">You are not logged in</p>
-{% endif %}
+
 
 <!-- Footer -->
+
+<footer class="container-fluid">
+    <div id="footer-details" class="row">
+        <div class="col-12">
+            <p class="m-0 text-center text-white">🐶❤️🦴 </p>
+            {% if user.is_authenticated %}
+            <p class="text-end m-3">You are logged in as {{ user }}</p>
+            {% else %}
+            <p class="text-end m-3">You are not logged in</p>
+            {% endif %}
+            </p>
+        </div>
+
+</footer>
 
 <!--JavaScript-->
 {% block extras %}
