@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+<form id="userReviewForm" method="post" style="margin-top: 1.3em;">
+    {{ user_review_form | crispy }}
+    {% csrf_token %}
+    <button id="submit-button" type="submit" class="btn btn-signup btn-lg">Submit</button>
+</form>
+
+{% block extras %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
+{% endblock content %}

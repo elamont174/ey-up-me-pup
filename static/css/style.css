@@ -11,13 +11,21 @@
 --san-juan: #38526d;
 */
 
+/* ----- Colours */
 
-.bg-color-title {
+.bg-color-title, .bg-color-subtitle {
     background-color: #3a4b46;
 }
 
+
+/* ----- Heading */
+
 header {
     margin: 0;
+}
+
+.heading, .subheading {
+    margin-left: 50px;
 }
 
 .logo {
@@ -27,4 +35,85 @@ header {
     background-size: cover;
     min-height: 360px;
 }
+
+.title {
+    font-family: "Shantell Sans", sans-serif;
+    color: #cead87;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+i .fa-paw{
+    font-size: 40px;
+}
+
+.subtitle {
+    font-family: "Shantell Sans", sans-serif;
+    color: #cead87;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.about-pup {
+    font-family: "Alegreya Sans", sans-serif;
+    color: #cead87;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+div.row.no-gutters {
+    --bs-gutter-x: 0;
+}
+
+.menucontainer {
+    background-color: #cead87;
+    margin: 0;
+    height: 50px;
+    font-size: 0;
+}
+
+#nav li {
+    font-size: 17px;
+    padding: 0;
+}
+
+.menuitem {
+    height: 70px;
+    text-align: center;
+    margin: 5px;
+}
+
+.menuitem a {
+    color: #3a4b46;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: #87a8ce;
+}
+
+/* ----- Footer */
+
+footer {
+    background-color: #3a4b46;
+    color: #cead87;
+    min-height: 50px;
+    text-align: center;
+}
+
+footer i {
+    color: #cead87;
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* ----- Main Content */
+
+.main-bg {
+    background-color: #926d4c;
+}
+
 
