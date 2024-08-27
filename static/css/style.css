@@ -11,6 +11,10 @@
 --san-juan: #38526d;
 */
 
+body {
+    background-color: #926d4c; 
+}
+
 /* ----- Colours */
 
 .bg-color-title, .bg-color-subtitle {
@@ -136,6 +140,7 @@ a.page-link {
     color:#cead87;
     background-color: #926d4c;
     font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
     border: 0;
     margin-bottom: 0;
 }
@@ -147,6 +152,70 @@ a.page-link:hover{
     border: 0;
 }
 
+/* ----- Staff review card */
+
+h1.post-location_name {
+    color: #292220;
+    margin-top: 30px;
+}
+
+.post-card {
+    background-color: #cead87;
+    color: #292220;
+
+    div.post-card-body p {
+        margin: 20px 100px 50px 100px;
+    }
+}
+
+
+i.fa-comments, strong.text-secondary {
+    color: #292220;
+}
+
+div.post-card-body a {
+    color: #8392a5;
+    text-align: right;
+}
+
+/* ----- Sign-out page */
+
+div.signout-card, div.signin-card, div.signin-card p {
+    background-color: #cead87;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px;
+}
+
+
+div.signout-card h3, div.signout-card form, div.signin-card h3, div.signin-card form {
+    font-family: "Shantell Sans", sans-serif;
+    font-size: 25px;
+}
+
+div.signout-card form, div.signin-card form {
+    font-size: 15px;
+    border-radius: 1px;
+    border-color: #3a4b46;
+}
+
+button.btn.btn-signup.right {
+    border-radius: 1px;
+    border-color: #926d4c;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* ----- Messages */
+
+div#msg.alert.success.alert-dismissible.fade.show {
+    color: #3a4b46;
+    background-color: #cead87;
+    margin: 0;
+}
 
 /* ----- Footer */
 

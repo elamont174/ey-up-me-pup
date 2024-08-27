@@ -15,9 +15,9 @@
 
 <div class="container">
   <div class="row">
-    <div class="col card mb-4  mt-3 left  top">
-      <div class="card-body">
-        <p class="card-text">{{ post.review_content | safe }}</p>
+    <div class="col post-card mb-4  mt-3 left  top">
+      <div class="post-card-body">
+        <p class="post-card-text">{{ post.review_content | safe }}</p>
       </div>
     </div>
   </div>
@@ -34,9 +34,9 @@
   </div>
   <!-- Displaying User Reviews -->
   <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 ">
+    <div class="col-md-8 post-card mb-4  mt-3 ">
       <h3>What other pup owners think!</h3>
-      <div class="card-body">
+      <div class="post-card-body">
         <!-- We want a for loop inside the empty control tags
                   to iterate through each user_review in user_reviews -->
         {% for user_review in user_reviews %}
@@ -67,8 +67,8 @@
       </div>
     </div>
     <!-- Creating New User Reviews -->
-    <div class="col-md-4 card mb-4 mt-3">
-      <div class="card-body">
+    <div class="col-md-4 post-card mb-4 mt-3">
+      <div class="post-card-body">
         {% if user.is_authenticated %}
         <h3>Leave a review:</h3>
         <p>Posting as: {{ user.username }}</p>
