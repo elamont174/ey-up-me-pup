@@ -12,7 +12,9 @@
 */
 
 body {
-    background-color: #926d4c; 
+    background-color: #926d4c;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px; 
 }
 
 /* ----- Colours */
@@ -162,12 +164,16 @@ h1.post-location_name {
 .post-card {
     background-color: #cead87;
     color: #292220;
-
-    div.post-card-body p {
-        margin: 20px 100px 50px 100px;
-    }
 }
 
+div.post-card-body p {
+    margin: 20px 100px 50px 100px;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+div#div_id_your_review.mb-3 {
+    font-family: "Alegreya Sans", sans-serif;
+}
 
 i.fa-comments, strong.text-secondary {
     color: #292220;
@@ -176,6 +182,44 @@ i.fa-comments, strong.text-secondary {
 div.post-card-body a {
     color: #8392a5;
     text-align: right;
+}
+
+div.post-card-body h3 {
+    font-family: "Shantell Sans", sans-serif;
+}
+
+/* ----- User reviews*/
+
+div.p-2.user_reviews.faded {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+p.reviewer-name {
+    font-weight: 800;
+}
+
+p.approval {
+    color: red;
+}
+
+/* ----- Leaving a user review */
+.user-reviews h3 {
+    font-family: "Shantell Sans", sans-serif;
+    margin: 10px;
+}
+
+form#userReview {
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+button#submit-button.btn.btn-signup.btn-lg {
+    border-radius: 1px;
+    border-color: #926d4c;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Shantell Sans", sans-serif;
 }
 
 /* ----- Sign-out page */
@@ -207,6 +251,27 @@ button.btn.btn-signup.right {
     border-color: #926d4c;
     margin-bottom: 20px;
     font-size: 15px;
+}
+
+/* Register page */
+
+div.register-form {
+    background-color: #cead87;
+    margin: 30px 500px 30px 500px;
+    padding: 10px;
+}
+
+div.register-form h1 {
+    font-family: "Shantell Sans", sans-serif;
+}
+
+button.signup-btn {
+    border-radius: 1px;
+    border-color: #926d4c;
+    margin: 20px;
+    font-size: 20px;
+    font-family: "Shantell Sans", sans-serif;
+    background-color:#926d4c;
 }
 
 /* ----- Messages */

@@ -34,7 +34,7 @@
   </div>
   <!-- Displaying User Reviews -->
   <div class="row">
-    <div class="col-md-8 post-card mb-4  mt-3 ">
+    <div class="col-md-8 post-card mb-4 mt-3 user-reviews">
       <h3>What other pup owners think!</h3>
       <div class="post-card-body">
         <!-- We want a for loop inside the empty control tags
@@ -43,7 +43,7 @@
         <div class="p-2 user_reviews
                   {% if not user_review.approved and user_review.reviewer == user %}
                   faded{% elif not user_review.approved %} d-none{% endif %}">
-          <p class="font-weight-bold">
+          <p class="font-weight-bold reviewer-name">
             {{ user_review.reviewer }}'s review: {{ user_review.your_rating }}🐾
             <span class="font-weight-normal">
             </span>
