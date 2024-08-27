@@ -88,5 +88,3 @@ def user_review_delete(request, slug, user_review_id):
         messages.add_message(request, messages.ERROR, 'You can only delete your own reviews!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-

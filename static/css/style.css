@@ -178,8 +178,8 @@ i.fa-comments, strong.text-secondary {
 }
 
 div.post-card-body a {
-    color: #8392a5;
-    text-align: right;
+    color: #38526d;
+    margin-left: 30%;
 }
 
 div.post-card-body h3 {
@@ -291,6 +291,10 @@ div#div_id_your_review.mb-3, div#div_id_your_rating.mb-3 {
 button#submit-button.btn.btn-signup.btn-lg {
     margin-left: 40%;
     margin-right: 40%;
+}
+
+div.p-2.user_reviews.faded a{
+    margin-left: 30%;
 }
 
 /* ----- Messages */
