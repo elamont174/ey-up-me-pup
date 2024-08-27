@@ -9,9 +9,6 @@
         <h1 class="post-location_name">{{ post.location_name }}</h1>
         <p class="post-subtitle">Pup team writer: {{ post.pup_team }} | Rating: {{ post.rating }}🐾</p>
       </div>
-      <!--<div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/notts_puppy.webp' %}" class="scale" alt="picture of puppy in Nottingham (AI generated)">
-            </div>-->
     </div>
   </div>
 </div>
@@ -20,8 +17,6 @@
   <div class="row">
     <div class="col card mb-4  mt-3 left  top">
       <div class="card-body">
-        <!-- The post content goes inside the card-text. -->
-        <!-- Use the | safe filter inside the template tags -->
         <p class="card-text">{{ post.review_content | safe }}</p>
       </div>
     </div>

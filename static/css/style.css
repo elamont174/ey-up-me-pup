@@ -95,6 +95,59 @@ div.row.no-gutters {
     color: #87a8ce;
 }
 
+/* ----- Review cards*/
+
+.card {
+    border: 0;
+}
+.card-body {
+    color: #cead87;
+    background-color: #3a4b46;
+    max-width: 500px;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+
+
+a.post-link {
+    color: #cead87;
+    text-decoration: none;
+    font-family: "Shantell Sans", sans-serif;
+    max-width: 500px;
+
+}
+
+a.post-link:hover {
+    color: #87a8ce;
+}
+
+a.card-box {
+    color: #cead87;
+    text-decoration: none;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.card-box:hover {
+    color: #cead87;
+    background-color: #87a8ce;
+}
+
+a.page-link {
+    color:#cead87;
+    background-color: #926d4c;
+    font-family: "Alegreya Sans", sans-serif;
+    border: 0;
+    margin-bottom: 0;
+}
+
+a.page-link:hover{
+    color:#926d4c;
+    background-color: #cead87;
+    font-family: "Alegreya Sans", sans-serif;
+    border: 0;
+}
+
+
 /* ----- Footer */
 
 footer {
