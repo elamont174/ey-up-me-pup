@@ -49,25 +49,17 @@ def post_detail(request, slug):
 
 
 def user_review_edit(request, slug, user_review_id):
-    """
-    view to edit user reviews
-    """
-    print("we are in user view edit")
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     user_review = get_object_or_404(Comment, pk= user_review_id)
     user_review_form = CommentForm(data=request.POST, instance=user_review)
     if request.method == "POST":
-        print(user_review)
-        print(user_review_form)
-        print("we are in view edit post")
         if user_review_form.is_valid() and user_review.reviewer == request.user:
-            print("the form is valid")
             user_review = user_review_form.save(commit=False)
             user_review.location = post
             user_review.approved = False
             user_review.save()
-            messages.add_message(request, messages.SUCCESS, 'Pup review Updated!')
+            messages.add_message(request, messages.SUCCESS, 'Pup review updated! Close this tab and refresh to see your pupdate')
         else:
             messages.add_message(request, messages.ERROR, 'Error updating pup review...')
     context = {
@@ -75,7 +67,6 @@ def user_review_edit(request, slug, user_review_id):
         "user_review": user_review,
         "user_review_form": user_review_form,
     }
-    # return HttpResponseRedirect(reverse('post_detail', args=[slug]))
     
     return render(request,"pup_review/edit_user_reviews.html", context)
 

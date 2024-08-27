@@ -113,8 +113,6 @@ div.row.no-gutters {
     font-family: "Alegreya Sans", sans-serif;
 }
 
-
-
 a.post-link {
     color: #cead87;
     text-decoration: none;
@@ -205,6 +203,7 @@ p.approval {
 }
 
 /* ----- Leaving a user review */
+
 .user-reviews h3 {
     font-family: "Shantell Sans", sans-serif;
     margin: 10px;
@@ -227,8 +226,7 @@ button#submit-button.btn.btn-signup.btn-lg {
 div.signout-card, div.signin-card, div.signin-card p {
     background-color: #cead87;
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 100px 20px 100px;
     justify-content: center;
     font-family: "Alegreya Sans", sans-serif;
     font-size: 20px;
@@ -272,6 +270,27 @@ button.signup-btn {
     font-size: 20px;
     font-family: "Shantell Sans", sans-serif;
     background-color:#926d4c;
+}
+
+/* -----Edit reviews */
+
+div.post-card-body {
+    margin-bottom: 30px;
+}
+
+div.post-card-body h3 {
+    margin: 30px;
+    padding: 20px;
+}
+
+div#div_id_your_review.mb-3, div#div_id_your_rating.mb-3 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+button#submit-button.btn.btn-signup.btn-lg {
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 /* ----- Messages */

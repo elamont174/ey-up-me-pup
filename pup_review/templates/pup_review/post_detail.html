@@ -57,9 +57,8 @@
           </p>
           {% endif %}
           {% if user.is_authenticated and user_review.reviewer == user %}
-          <!--<button class="btn btn-delete" user_review_id="{{ user_review.id }}">Delete</button>-->
-          <!--<button class="btn btn-edit" user_review_id="{{ user_review.id }}">Edit</button>-->
-          <a href = "{% url 'edit_user_reviews' slug=post.slug user_review_id=user_review.id %}">Edit</a>
+          <button class="btn btn-delete" user_review_id="{{ user_review.id }}">Delete</button>
+          <a href = "{% url 'edit_user_reviews' slug=post.slug user_review_id=user_review.id %}" target="_blank">Edit</a>
           {% endif %}
         </div>
         <!-- Our for loop ends here -->
