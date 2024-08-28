@@ -18,7 +18,7 @@
 
 ## Design
 ### Wireframes
-![Wireframe](static/images/pup-wireframe.png)
+- [Click here for design wireframe](static/images/pup-wireframe.png)
 
 ### Colour Scheme
 -An image of dogs was used as the central image due to the main theme of the website being about dogs. Leonardo AI was used to generate a beautiful 'painting' - this was then run through a colour picker to generate a colour palette. This colour palette was used throughtout the website to complement this central image. 
