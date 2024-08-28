@@ -29,8 +29,6 @@
 | Staff review       | Edit a review           | Pressing 'Edit' will open the 'Edit your review' page in a new tab                                                                                                                                                                                        | PASS      |                                                                                                                                            |
 | Edit a review page | Edit a review           | Entering a review/rating and pressing submit will update review needing edited                                                                                                                                                                            | PASS      |                                                                                                                                            |
 
-## User stories testing
-
 ## Bugs
 
 ## Code validators

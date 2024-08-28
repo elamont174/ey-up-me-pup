@@ -13,15 +13,45 @@ Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp
 
 ## Agile methodology
 - Agile methodology is "a set of methods and practices where solutions evolve through collaboration between self-organizing, cross-functional teams" ([reference](https://www.agilealliance.org/agile-essentials/)).
-
-### MoSCoW prioritising
-
-- Must have
-- Should have
-- Could have
-- Would have
+- A project board was set-up to keep track of user stories. Each user story was assigned a 'MoSCoW' prioritisation (must have, should have, could have, won't have) tag. The board can be found [here](https://github.com/users/elamont174/projects/5/views/1).
 
 ### User stories
+
+1. As a user I can register an account and log-in to the site so that I can leave reviews.
+* SUCCESS CRITERIA
+- I can use my email address to create an account
+- Once registered, I can log-in to my account using my email address and a passsword
+- When I am logged in, I can leave comments
+
+2. As a user I can click on reviews so that I can read the content.
+* SUCCESS CRITERIA
+- When the review is clicked on, the full content appears
+
+3. As a user I can navigate easily to different pages so that I have a more refined user experience.
+*SUCCESS CRITERIA
+- A navigation page will exist where users can choose from pup-friendly CAFES, PUBS or OTHER.
+- By clicking on the relevant link, the user will be taken to the relevant page e.g. clicking CAFES will take the user to the CAFES reviews page
+- The navigation page itself will be easy to navigate to
+
+4. As a registered user I can leave a review so that I can interact with others.
+*SUCCESS CRITERIA
+- As a registered user, I can leave a review on the relevant page (i.e. pub review in pub page)
+- As part of the review, I can leave a rating (1-5 'paws')
+- As part of the review, I can write text
+- The title of the review should be the name of the location
+
+5. As an admin I can moderate posts so that posts are not published without admin approval.
+* SUCCESS CRITERIA
+- When user clicks 'post', they will receive a message advising them that their post has been sent to admins for approval
+- Admins would be able to publish or delete posts once they have been checked
+
+6. As a registered user I can edit my own review so that I can edit or change a review that I created.
+* SUCCESS CRITERIA
+- If I created a review, I can edit it
+
+7. As a registered user I can delete my own review so that I can delete a review that I created.
+* SUCCESS CRITERIA
+- If I created a review, I can delete it
 
 ## Design
 ### Wireframes
@@ -63,7 +93,6 @@ Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp
 
 ## Database
 - I used Code Institute's PostgreSQL database.
-
 ### Creating a database
 1. Navigate to [PostgreSQL](https://dbs.ci-dbs.net/) from Code Institute.
 2. Enter your student email address in the input field provided.
