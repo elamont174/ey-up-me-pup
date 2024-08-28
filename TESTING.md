@@ -36,7 +36,6 @@
 ## Responsiveness
 
 ## Code validators
-
 ### HTML
 #### Home
 - ![Home page validator screenshot](static/images/html-vali-home.png)
@@ -78,5 +77,6 @@
 </p>
 
 ### Python
+
 
 ### Lighthouse

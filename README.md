@@ -1,6 +1,9 @@
 # Ey Up Me Pup!
+![Homepage screenshot](static/images/homepage.png)
 
 ## Project Aims
+
+Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp.com/).
 
 #### A note on the name
 "Ey Up Me Duck" is a commonly used phrase in the East Midlands (including Nottingham). It is a term of endearment which essentially means "hello my dear". 'Ey Up Me Pup!' is a play on words on this popular phrase. 
@@ -81,9 +84,12 @@
 - [Destiny Franks(Desphixs)](https://www.youtube.com/watch?v=gBJMM3ZQLpk) YouTube tutorial helped me to learn the code to implement my 'paws' rating system.
 - [Leonardo AI] (https://leonardo.ai/) was used to generate the central image of dogs seen on the header of the website. 
 - [Imagecolourpicker.com](https://imagecolorpicker.com/) was used to generate the colour palette from the image of the dogs produced by Leonardo AI.
-- [HTMLcolourcodes](https://htmlcolorcodes.com/color-picker/) was used to help understand complementary and analogous colorus to help pick colours. 
+- [HTMLcolourcodes](https://htmlcolorcodes.com/color-picker/) was used to help understand complementary and analogous colourd to help pick colours. 
 - All review images were linked from Google Images using their Image URL.
 - [Google Fonts](https://fonts.google.com/) were used to source the font styles.
+- Balsamiq was used to create the design wireframe.
+- Microsoft PowerPoint was used to create the EPR image.
+- [TabletoMarkdown.com](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/) was used to create the tables in TESTING.md from a Microsoft Excel spreadsheet that I created.
 
 ## Acknowledgements
 - My mentor Julia has, as always, been an incredible support. 
