@@ -1,8 +1,5 @@
 # Ey Up Me Pup!
 ![Homepage screenshot](static/images/homepage.png)
-
-## Project Aims
-
 Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp.com/).
 
 #### A note on the name
@@ -11,14 +8,20 @@ Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp
 ## User experience
 ### Purpose
 - Ey Up Me Pup! is designed for dog owners in Nottingham. The 'Pup Team' write reviews on various pubs, cafes and other locations based on how dog friendly they are - users can then write their own reviews on these locations. 
-
-### Target audience
-- The target audience of Ey Up Me Pup would be locals and tourists with dogs. 
-
-### User stories
+- It is designed to foster a sense of community within the dog owners of Nottingham and to allow users to share their experiences with others.
+- The target audience of 'Ey Up Me Pup!' would be Nottingham locals and tourists with dogs. Or anyone who loves dogs! 
 
 ## Agile methodology
+- Agile methodology is "a set of methods and practices where solutions evolve through collaboration between self-organizing, cross-functional teams" ([reference](https://www.agilealliance.org/agile-essentials/)).
 
+### MoSCoW prioritising
+
+- Must have
+- Should have
+- Could have
+- Would have
+
+### User stories
 
 ## Design
 ### Wireframes
@@ -59,6 +62,55 @@ Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp
 ## Features
 
 ## Database
+- I used Code Institute's PostgreSQL database.
+
+### Creating a database
+1. Navigate to [PostgreSQL](https://dbs.ci-dbs.net/) from Code Institute.
+2. Enter your student email address in the input field provided.
+3. Click Submit.
+4. Wait while the database is created.
+5. Check your email.
+6. You now have a URL you can use to connect your app to your database.
+
+## Deployment
+- The website was deployed to Heroku and can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp.com/).
+### Heroku
+- You will need a Heroku log-in to be able to deploy a website to Heroku.
+- Once you have logged into Heroku:
+1. Click 'New' > 'Create new app'
+2. Choose a unique name, choose your region and press 'Create app'
+3. Click on 'Settings' and then 'Reveal Config Vars'
+4. Add a key of 'DISABLE_COLLECTSTATIC' with a value of '1'.
+5. Add a key of 'DATABASE_URL' - the value will be the URL you were emailed when creating your database.
+6. Add a key of 'SECRET_KEY' - the value will be any random secret key (google 'secret key generator' and use it to generate a random string of numbers, letters and characters)
+7. In your code you will need to install project requirements:
+- pip3 install gunicorn~=20.1 
+- pip3 freeze --local > requirements.txt
+8. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
+9. In settings.py, set DEBUG to False. 
+- YOU SHOULD ALWAYS SET DEBUG TO FALSE BEFORE DEPLOYING FOR SECURITY
+10. Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py
+11. Add, commit and push your code.
+12. Go back to Heroku, click on the 'Deploy' tab.
+13. Connect your project to GitHub.
+14. Scroll to the bottom and click 'Deploy Branch' and your project will be deployed!
+
+### Cloning
+- To clone a GitHub repository:
+1. On GitHub.com, navigate to the repository you want to clone.
+2. Click the "Code" button (found above the list of files).
+3. Copy the URL for the repository.
+4. Open Git Bash or your chosen terminal.
+5. Navigate to the directory where you want to clone the repository.
+6. Type: git clone https://github.com/elamont174/ey-up-me-pup.git
+7. Press Enter to create your local clone.
+
+### Forking
+- 'Forking' the GitHub repository means creating a copy which can be viewed/changed without changing the original.
+- To fork a GitHub repository:
+1. Login to GitHub and navigate to the repository you want to fork.
+2. Click the "Fork" button (found above the Settings button).
+3. You will now have a copy of the original repository in your GitHub account.
 
 ## Technologies used
 - HTML was used to structure the content of the website.
@@ -68,16 +120,11 @@ Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp
 - GitHub was used to host the repository and version control.
 - Heroku was the hosting platform.
 
-### Databases
+### Database planning
 - ![EPR diagram](static/images/epr.png.png)
 
 ## Testing
 - Please see [TESTING.md](TESTING.md) file for all testing.
-
-## Deployment
-### Heroku
-### Cloning
-### Forking
 
 ## Credits
 - I used the "I Think Therefore I Blog" walkthrough from the course content as a basis for my project to help me understand the Django. I customised the models, views and templates to create my own unique website. 
@@ -95,5 +142,6 @@ Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp
 ## Acknowledgements
 - My mentor Julia has, as always, been an incredible support. 
 - I have to thank the Code Institute Student Care team for looking after me so well during a period of intense illness.
-- My long-suffering husband, Malcolm Lamont, for not mentioning the small mountain of coke zero cans next to my laptop.
+- I have made some wonderful friends through hackathons who allowed me to read through their READMEs and look at their projects when I was planning out my project at the beginning. Thank you Stephen Dawson, Rachel O'Donnell and Kyle Clow. 
+- My long-suffering husband, Malcolm Lamont, for... everything.
 - My dad, Calum Weir, for feeding me and letting me borrow his computer monitor as a second screen. 
