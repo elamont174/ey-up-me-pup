@@ -38,6 +38,11 @@
 ## Code validators
 
 ### HTML
+- Home
+- ![Home page validator screenshot](static/images/html-vali-home.png)
+
+- Logout page
+-![Logout page validator screenshot]()
 
 ### CSS
 
