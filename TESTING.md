@@ -38,13 +38,44 @@
 ## Code validators
 
 ### HTML
-- Home
+#### Home
 - ![Home page validator screenshot](static/images/html-vali-home.png)
 
-- Logout page
--![Logout page validator screenshot]()
+#### Logout page
+- ![Logout page validator screenshot](static/images/html-vali-home.png)
+
+#### Login page
+- ![Login page validator screenshot](static/images/html-vali-home.png)
+
+#### Register page
+- ![Register page validator screenshot](static/images/html-val-register.png)
+- When I checked the code that the validator was referring to, it was code which was integrated by Django for the review functionality and not written by me. I looked for it everywhere in an attempt to fix it but could not find it. 
+- ![Register page validator screenshot code](static/images/html-val-register-code.png)
+
+#### Example of Staff review (e.g. Bendigo Lounge)
+- ![Staff review validator screenshot](static/images/html-val-review.png)
+- The code which the validator is referring to is inputted from the admin section of the Django backend framework via summernote. It is not possible to add an 'alt' reference as a user. The </ p> is also code created by the framework.
+
+#### Edit review page
+- ![Edit review validator screenshot](static/images/html-vali-home.png)
 
 ### CSS
+- ![CSS validator screenshot](static/images/css-vali.png)
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
 
 ### Python
 
