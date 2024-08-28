@@ -90,6 +90,7 @@ Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp
 - Balsamiq was used to create the design wireframe.
 - Microsoft PowerPoint was used to create the EPR image.
 - [TabletoMarkdown.com](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/) was used to create the tables in TESTING.md from a Microsoft Excel spreadsheet that I created.
+- Google Extension 'Responsive Viewer' was used to create the screenshots for the Responsiveness section of TESTING.md.
 
 ## Acknowledgements
 - My mentor Julia has, as always, been an incredible support. 

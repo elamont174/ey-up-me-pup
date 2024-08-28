@@ -33,8 +33,6 @@
 
 ## Bugs
 
-## Responsiveness
-
 ## Code validators
 ### HTML
 #### Home
@@ -80,3 +78,10 @@
 
 
 ### Lighthouse
+
+## Responsiveness
+#### Mobile (iPhone 14 Pro)
+
+#### Tablet (iPad Air 5)
+
+#### Desktop (Macbook Air)
