@@ -68,9 +68,8 @@
 ### Databases
 - ![EPR diagram](static/images/epr.png.png)
 
-### Other tools
-
 ## Testing
+- Please see [TESTING.md](TESTING.md) file for all testing.
 
 ## Deployment
 ### Heroku
