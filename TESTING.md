@@ -35,6 +35,7 @@
 
 ## Code validators
 ### HTML
+- The [W3C Validator](https://validator.w3.org/) was used to validate the HTML.
 #### Home
 - ![Home page validator screenshot](static/images/html-vali-home.png)
 
@@ -57,6 +58,7 @@
 - ![Edit review validator screenshot](static/images/html-vali-home.png)
 
 ### CSS
+- The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
 - ![CSS validator screenshot](static/images/css-vali.png)
 
 <p>
@@ -75,22 +77,60 @@
 </p>
 
 ### Python
-
+- The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python files.
+- admin.py
+- ![PEP8 screenshot](static/images/pep8-admin.png)
+- apps.py
+- ![PEP8 screenshot](static/images/pep8-apps.png)
+- forms.py
+- ![PEP8 screenshot](static/images/pep8-forms.png)
+- models.py
+- ![PEP8 screenshot](static/images/pep8-models.png)
+- settings.py
+- ![PEP8 screenshot](static/images/pep8-settings.png)
+- urls.py
+- ![PEP8 screenshot](static/images/pep8-urls.png)
+- ![PEP8 screenshot](static/images/pep8-urls-ey-up.png)
+- views.py
+- ![PEP8 screenshot](static/images/pep8-views.png)
+- Even though one line was considered too long by PEP8 (highlighted), I decided that the readability of the code was better when left on the same line, since it was very close to the accepted limit.
+- wsgi.py
+- ![PEP8 screenshot](static/images/pep8-wsgi.png)
 
 ### Lighthouse
+#### Home
+- ![Lighthouse screenshot for home page](static/images/lighthouse-home.png)
+
+#### Register
+- ![Lighthouse screenshot for register page](static/images/lighthouse-register.png)
+
+#### Login
+- ![Lighthouse screenshot for login page](static/images/lighthouse-login.png)
+
+#### Logout
+- ![Lighthouse screenshot for logout page](static/images/lighthouse-logout.png)
+
+#### Edit reviews
+- ![Lighthouse screenshot for edit reviews page](static/images/lighthouse-edit-reviews.png)
+
+
+#### Future improvements based on Lighthouse
+- The biggest performance issue was the detailed logo. This was already converted to WEBP so perhaps a less detailed image would be used if this site was to be carried forward.
+- Accessibility would be a priority moving forward. The colour palette was chosen based upon the central image and maintained throughout the site for design purposes. Moving forward, more high contrast colours would be chosen.
+
 
 ## Responsiveness
 #### Mobile (iPhone 14 Pro)
-![mobile responsiveness screenshot- home](static/images/iphone-14-pro-home.png)
-![mobile responsiveness screenshot- register](static/images/iphone-14-pro-register.png)
-![mobile responsiveness screenshot- review](static/images/iphone-14-pro-review.png)
+- ![mobile responsiveness screenshot- home](static/images/iphone-14-pro-home.png)
+- ![mobile responsiveness screenshot- register](static/images/iphone-14-pro-register.png)
+- ![mobile responsiveness screenshot- review](static/images/iphone-14-pro-review.png)
 
 #### Tablet (iPad Air 5)
-![tablet responsiveness screenshot- home](static/images/ipad-air-5-home.png)
-![tablet responsiveness screenshot- register](static/images/ipad-air-5-register.png)
-![tablet responsiveness screenshot- review](static/images/ipad-air-5-review.png)
+- ![tablet responsiveness screenshot- home](static/images/ipad-air-5-home.png)
+- ![tablet responsiveness screenshot- register](static/images/ipad-air-5-register.png)
+- ![tablet responsiveness screenshot- review](static/images/ipad-air-5-review.png)
 
 #### Desktop (Macbook Air)
-![laptop responsiveness screenshot- home](static/images/macbook-air-home.png)
-![laptop responsiveness screenshot- register](static/images/macbook-air-register.png)
-![laptop responsiveness screenshot- review](static/images/macbook-air-review.png)
+- ![laptop responsiveness screenshot- home](static/images/macbook-air-home.png)
+- ![laptop responsiveness screenshot- register](static/images/macbook-air-register.png)
+- ![laptop responsiveness screenshot- review](static/images/macbook-air-review.png)
