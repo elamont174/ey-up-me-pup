@@ -90,6 +90,50 @@ Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp
 - All review images were linked from Google Images using their Image URL.
 
 ## Features
+### Homepage
+- The homepage is the hub of 'Ey Up Me Pup!' The review titles are shown in a grid pattern, with the Pup Team (Staff) reviewer title next to the name of the location. When the name of the location is hovered over, it changes colour so the user knows where to press. 
+There is a short paragraph explaining the aims of the website and an attractive AI generated image of some dogs running through a forest. 
+- ![Homepage screenshot](static/images/home.png)
+
+### Staff review page
+- When you click on a Pup Team (Staff) review page, the title is the name of the location, the subtitle is the name of the Pup Team reviewer alongside their rating - 1-5 'paws'. Their written review is there and, any review that I have written, also contains a photo and a website link to the website. The Django feature Summernote was used to achieve this. The size and font of the writing is also determined by Summernote, giving a Pup Team (staff) user full customisation. 
+- ![Waterstones review page screenshot](static/images/review-feature.png)
+
+### User review
+- At the bottom right corner of each Pup Team (Staff) review, there is the opportunity for users to leave their own reviews and ratings on that location. Users simply type their review in the text box, select their rating and then press submit and it will be added with a "This review is awaiting approval" message. A message box will also pop up at the top of the page to provide feedback to the user. 
+- ![User review screenshot](static/images/user-review.png)
+- ![Pop-up message screenshot](static/images/approval.png)
+
+### Editing a user review
+- If you want to edit your own review, you can press the edit button which will open the edit page in a new tab. You can then edit your review and it will be updated. 
+- ![Edit review page screenshot](static/images/edit-review.png)
+
+### Deleting a user review
+- If you want to delete your own review, you can press the delete button which will delete your comment and a confirmation message will pop-up.
+- ![Delete confirmation screenshot](static/images/delete.png)
+
+### Registering
+- In the header, if you are not already logged in, you can press the 'Register' button which will take you to the registration page.
+- ![Register screenshot](static/images/register.png)
+
+### Logging in
+- In the header, if you are not already logged in, you can press the 'Login' button which will take you to the log-in page.
+- ![Log-in page screenshot](static/images/login.png)
+
+### Logging out
+- In the header, if you are logged in, you can press the 'Logout' button which will take you to the log-out page.
+- ![Log-out page screenshot](static/images/logout.png)
+
+### The admin panel 
+- The admin panel can be accessed by the superuser. This is where the Pup Team (Staff) reviews can be created and the user reviews can be approved. 
+- The Pup Team (staff) reviews are ordered by 'Type' (Pub/Cafe/Other) and then alphabetically within that.
+- The user reviews are ordered by whether they are approved or not so that the unapproved reviews are on top so they are easy to find by the superuser.
+- ![Admin panel screenshot 1](static/images/admin-comments.png)
+- ![Admin panel screenshot 2](static/images/admin-posts.png)
+
+### 'Socials'
+- In the footer, it is common to have icons leading to a companies social media pages such as Facebook, Instagram and X. As 'Ey Up Me Pup!' does not have any socials, I chose to put three dog related icons in the footer instead, each of which leads to a different Nottinghamshire based dog-linked charity when clicked.
+- !['Socials' footer screenshot](static/images/socials.png)
 
 ## Database
 - I used Code Institute's PostgreSQL database.
