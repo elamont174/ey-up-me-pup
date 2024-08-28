@@ -81,7 +81,16 @@
 
 ## Responsiveness
 #### Mobile (iPhone 14 Pro)
+![mobile responsiveness screenshot- home](static/images/iphone-14-pro-home.png)
+![mobile responsiveness screenshot- register](static/images/iphone-14-pro-register.png)
+![mobile responsiveness screenshot- review](static/images/iphone-14-pro-review.png)
 
 #### Tablet (iPad Air 5)
+![tablet responsiveness screenshot- home](static/images/ipad-air-5-home.png)
+![tablet responsiveness screenshot- register](static/images/ipad-air-5-register.png)
+![tablet responsiveness screenshot- review](static/images/ipad-air-5-review.png)
 
 #### Desktop (Macbook Air)
+![laptop responsiveness screenshot- home](static/images/macbook-air-home.png)
+![laptop responsiveness screenshot- register](static/images/macbook-air-register.png)
+![laptop responsiveness screenshot- review](static/images/macbook-air-review.png)
