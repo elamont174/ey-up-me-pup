@@ -254,7 +254,7 @@ button.btn.btn-signup.right {
 
 div.register-form {
     background-color: #cead87;
-    margin: 30px 500px 30px 500px;
+    margin: 30px 20% 30px 20%;
     padding: 10px;
 }
 
@@ -264,7 +264,6 @@ div.register-form h1 {
 
 button.signup-btn {
     border-radius: 1px;
-    border-color: #926d4c;
     margin: 20px;
     font-size: 20px;
     font-family: "Shantell Sans", sans-serif;
