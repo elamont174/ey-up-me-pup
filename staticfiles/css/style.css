@@ -1,0 +1,328 @@
+/* Colour palette
+--tan: #cead87;
+--cocoa-brown: #292220;
+--leather: #926d4c;
+--irish-coffee: #613a29;
+--willow-grove: #646e5c;
+--donkey-brown: #a69e72;
+--copper: #bd8130;
+--cape-cod: #3a4b46;
+--regent-gray: #8392a5;
+--san-juan: #38526d;
+*/
+
+body {
+    background-color: #926d4c;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px; 
+}
+
+/* ----- Colours */
+
+.bg-color-title, .bg-color-subtitle {
+    background-color: #3a4b46;
+}
+
+
+/* ----- Heading */
+
+header {
+    margin: 0;
+}
+
+.heading, .subheading {
+    margin-left: 50px;
+}
+
+.logo {
+    background: url("../images/notts_dogs.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+}
+
+.title {
+    font-family: "Shantell Sans", sans-serif;
+    color: #cead87;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+i .fa-paw{
+    font-size: 40px;
+}
+
+.subtitle {
+    font-family: "Shantell Sans", sans-serif;
+    color: #cead87;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.about-pup {
+    font-family: "Alegreya Sans", sans-serif;
+    color: #cead87;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+div.row.no-gutters {
+    --bs-gutter-x: 0;
+}
+
+.menucontainer {
+    background-color: #cead87;
+    margin: 0;
+    height: 50px;
+    font-size: 0;
+}
+
+#nav li {
+    font-size: 17px;
+    padding: 0;
+}
+
+.menuitem {
+    height: 70px;
+    text-align: center;
+    margin: 5px;
+}
+
+.menuitem a {
+    color: #3a4b46;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: #87a8ce;
+}
+
+/* ----- Review cards*/
+
+.card {
+    border: 0;
+}
+.card-body {
+    color: #cead87;
+    background-color: #3a4b46;
+    max-width: 500px;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+a.post-link {
+    color: #cead87;
+    text-decoration: none;
+    font-family: "Shantell Sans", sans-serif;
+    max-width: 500px;
+
+}
+
+a.post-link:hover {
+    color: #87a8ce;
+}
+
+a.card-box {
+    color: #cead87;
+    text-decoration: none;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.card-box:hover {
+    color: #cead87;
+    background-color: #87a8ce;
+}
+
+a.page-link {
+    color:#cead87;
+    background-color: #926d4c;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    border: 0;
+    margin-bottom: 0;
+}
+
+a.page-link:hover{
+    color:#926d4c;
+    background-color: #cead87;
+    font-family: "Alegreya Sans", sans-serif;
+    border: 0;
+}
+
+/* ----- Staff review card */
+
+h1.post-location_name {
+    color: #292220;
+    margin-top: 30px;
+}
+
+.post-card {
+    background-color: #cead87;
+    color: #292220;
+}
+
+div.post-card-body p {
+    margin: 20px 100px 50px 100px;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+div#div_id_your_review.mb-3 {
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+i.fa-comments, strong.text-secondary {
+    color: #292220;
+}
+
+div.post-card-body a {
+    color: #38526d;
+}
+
+div.post-card-body h3 {
+    font-family: "Shantell Sans", sans-serif;
+}
+
+/* ----- User reviews*/
+
+div.p-2.user_reviews.faded {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+p.reviewer-name {
+    font-weight: 800;
+}
+
+p.approval {
+    color: red;
+}
+
+/* ----- Leaving a user review */
+
+.user-reviews h3 {
+    font-family: "Shantell Sans", sans-serif;
+    margin: 10px;
+}
+
+form#userReview {
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+button#submit-button.btn.btn-signup.btn-lg {
+    border-radius: 1px;
+    border-color: #926d4c;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Shantell Sans", sans-serif;
+}
+
+/* ----- Sign-out page */
+
+div.signout-card, div.signin-card, div.signin-card p {
+    background-color: #cead87;
+    text-align: center;
+    margin: 20px 100px 20px 100px;
+    justify-content: center;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px;
+}
+
+
+div.signout-card h3, div.signout-card form, div.signin-card h3, div.signin-card form {
+    font-family: "Shantell Sans", sans-serif;
+    font-size: 25px;
+}
+
+div.signout-card form, div.signin-card form {
+    font-size: 15px;
+    border-radius: 1px;
+    border-color: #3a4b46;
+}
+
+button.btn.btn-signup.right {
+    border-radius: 1px;
+    border-color: #926d4c;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* Register page */
+
+div.register-form {
+    background-color: #cead87;
+    margin: 30px 500px 30px 500px;
+    padding: 10px;
+}
+
+div.register-form h1 {
+    font-family: "Shantell Sans", sans-serif;
+}
+
+button.signup-btn {
+    border-radius: 1px;
+    border-color: #926d4c;
+    margin: 20px;
+    font-size: 20px;
+    font-family: "Shantell Sans", sans-serif;
+    background-color:#926d4c;
+}
+
+/* -----Edit reviews */
+
+div.post-card-body {
+    margin-bottom: 30px;
+}
+
+div.post-card-body h3 {
+    margin: 30px;
+    padding: 20px;
+}
+
+div#div_id_your_review.mb-3, div#div_id_your_rating.mb-3 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+button#submit-button.btn.btn-signup.btn-lg {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+div.p-2.user_reviews.faded a{
+    margin-left: 30%;
+}
+
+/* ----- Messages */
+
+div#msg.alert.success.alert-dismissible.fade.show {
+    color: #3a4b46;
+    background-color: #cead87;
+    margin: 0;
+}
+
+/* ----- Footer */
+
+footer {
+    background-color: #3a4b46;
+    color: #cead87;
+    min-height: 50px;
+    text-align: center;
+}
+
+footer i {
+    color: #cead87;
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* ----- Main Content */
+
+.main-bg {
+    background-color: #926d4c;
+}
+
+

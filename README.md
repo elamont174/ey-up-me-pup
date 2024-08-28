@@ -16,6 +16,7 @@
 
 ## Agile methodology
 
+
 ## Design
 ### Wireframes
 - [Click here for design wireframe](static/images/pup-wireframe.png)
@@ -42,7 +43,6 @@
 - Tan (#cead87) and cape-cod (#3a4b46) were used as high contrast colours in the header and footer. High contrast is important for easy reading for the user, providing a positive user experience. It is also for this reason that cocoa-brown (#292220) and leather (#926d4c) were used together as the main background colour.
 
 ### Typography
-
 - Google fonts were used to source the font styles.
 - Sans-serif is considered the best type of font to read for those who have dyslexia or autism so only sans-serif type fonts were chosen.
 - Since the website is for dog owners, and contributed to by dog owners, a handwritten style of font was used for the title to signify that this is a more casual, user-friendly website. The "Shantell Sans" was chosen for it's playful feel.
@@ -58,7 +58,6 @@
 ## Database
 
 ## Technologies used
-
 - HTML was used to structure the content of the website.
 - CSS were used to design the layout of the website.
 - Bootstrap was used as a CSS framework to provide a grid structure and improve responsiveness.
