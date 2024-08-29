@@ -15,7 +15,6 @@ body {
     background-color: #926d4c;
     font-family: "Alegreya Sans", sans-serif;
     font-size: 20px; 
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -35,6 +34,7 @@ main {
 
 header {
     margin: 0;
+    background-color:#926d4c;
 }
 
 .heading, .subheading {
@@ -315,6 +315,7 @@ div#msg.alert.success.alert-dismissible.fade.show {
     background-color: #cead87;
     margin: 0 20% 0 20%;
     text-align: center;
+    font-family: "Alegreya Sans", sans-serif;
 }
 
 /* ----- Footer */
@@ -324,6 +325,7 @@ footer {
     color: #cead87;
     min-height: 50px;
     text-align: center;
+    margin-top: -10px;
 }
 
 footer i {
@@ -347,7 +349,6 @@ div#footer-details.row{
 
 .main-bg {
     background-color: #926d4c;
-    max-height: 100vh;
+    max-height: 100%;
 }
-
 

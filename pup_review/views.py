@@ -61,7 +61,7 @@ def user_review_edit(request, slug, user_review_id):
             messages.add_message(
                 request, messages.SUCCESS,
                 'Pup review updated!' 
-                'Close this tab and refresh to see your pupdate')
+                'Close this tab and refresh to see your updated review')
         else:
             messages.add_message(
                 request, messages.ERROR, 'Error updating pup review...')

@@ -220,7 +220,7 @@ There is a short paragraph explaining the aims of the website and an attractive 
 ## Credits
 - I used the "I Think Therefore I Blog" walkthrough from the course content as a basis for my project to help me understand the Django. I customised the models, views and templates to create my own unique website. 
 - [Destiny Franks(Desphixs)](https://www.youtube.com/watch?v=gBJMM3ZQLpk) YouTube tutorial helped me to learn the code to implement my 'paws' rating system.
-- [Leonardo AI] (https://leonardo.ai/) was used to generate the central image of dogs seen on the header of the website. 
+- [Leonardo AI](https://leonardo.ai/) was used to generate the central image of dogs seen on the header of the website. 
 - [Imagecolourpicker.com](https://imagecolorpicker.com/) was used to generate the colour palette from the image of the dogs produced by Leonardo AI.
 - [HTMLcolourcodes](https://htmlcolorcodes.com/color-picker/) was used to help understand complementary and analogous colourd to help pick colours. 
 - All review images were linked from Google Images using their Image URL.
