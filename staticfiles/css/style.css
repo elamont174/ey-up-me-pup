@@ -300,7 +300,8 @@ div.p-2.user_reviews.faded a{
 div#msg.alert.success.alert-dismissible.fade.show {
     color: #3a4b46;
     background-color: #cead87;
-    margin: 0;
+    margin: 0 20% 0 20%;
+    text-align: center;
 }
 
 /* ----- Footer */
