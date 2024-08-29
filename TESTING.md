@@ -1,7 +1,9 @@
 # Testing
 
+- Manual testing was carried out throughout the development of the website and bugs fixed as they arose. 
+
 ## Manual testing
-- Manual testing was carried out on the deployed site.
+- Manual testing was carried out on the local and deployed sites.
 
 | Location           | Feature                 | Expected Outcome                                                                                                                                                                                                                                          | Pass/Fail | Notes                                                                                                                                      |
 | ------------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -135,3 +137,10 @@
 - ![laptop responsiveness screenshot- home](static/images/macbook-air-home.png)
 - ![laptop responsiveness screenshot- register](static/images/macbook-air-register.png)
 - ![laptop responsiveness screenshot- review](static/images/macbook-air-review.png)
+
+## Browsers
+- I use Google Chrome as my browser so all screenshots above are from Google Chrome.
+- The site was tested on Microsoft Edge:
+- ![Microsoft Edge screenshot](static/images/edge.png)
+- The site was tested on Opera:
+- ![Opera screrenshot](static/images/opera.png)
