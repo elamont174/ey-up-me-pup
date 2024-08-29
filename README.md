@@ -164,8 +164,14 @@ There is a short paragraph explaining the aims of the website and an attractive 
 5. Add a key of 'DATABASE_URL' - the value will be the URL you were emailed when creating your database.
 6. Add a key of 'SECRET_KEY' - the value will be any random secret key (google 'secret key generator' and use it to generate a random string of numbers, letters and characters)
 7. In your terminal, type the code you will need to install project requirements:
-- pip3 install gunicorn~=20.1 
+- pip3 install gunicorn~=20.1
+- pip3 install -r requirements.txt
 - pip3 freeze --local > requirements.txt
+8. Create an 'env.py' file at the root directory which contains the following:
+    - import os
+    - 
+    - os.environ["DATABASE_URL"]='CI database URL'
+    - os.environ["SECRET_KEY"]=" Your secret key"
 8. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
 9. In settings.py, set DEBUG to False. 
 - YOU SHOULD ALWAYS SET DEBUG TO FALSE BEFORE DEPLOYING FOR SECURITY
@@ -192,6 +198,14 @@ There is a short paragraph explaining the aims of the website and an attractive 
 2. Click the "Fork" button (found above the Settings button).
 3. You will now have a copy of the original repository in your GitHub account.
 
+*Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+
+- Run the server: python3 manage.py runserver
+- Stop the app once it's loaded: CTRL+C or ⌘+C
+- Make any necessary migrations: python3 manage.py makemigrations
+- Migrate the data to the database: python3 manage.py migrate
+- Create a superuser: python3 manage.py createsuperuser
+
 ## Technologies used
 - HTML was used to structure the content of the website.
 - CSS were used to design the layout of the website.
@@ -199,7 +213,6 @@ There is a short paragraph explaining the aims of the website and an attractive 
 - Python and Django were used to build the backend review framework.
 - GitHub was used to host the repository and version control.
 - Heroku was the hosting platform.
-
 
 ## Testing
 - Please see [TESTING.md](TESTING.md) file for all testing.

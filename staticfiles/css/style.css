@@ -16,6 +16,8 @@ body {
     font-family: "Alegreya Sans", sans-serif;
     font-size: 20px; 
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -345,6 +347,7 @@ div#footer-details.row{
 
 .main-bg {
     background-color: #926d4c;
+    max-height: 100vh;
 }
 
 
