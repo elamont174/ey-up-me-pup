@@ -11,6 +11,19 @@
 <head>
     <title>Ey Up Me Pup!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="EY Up Me Pup! - website reviewing dog-friendly places in Nottingham, England">
+    <meta name="keywords"
+        content="Nottingham, dogs, dog-friendly, dog-friendly pubs, Ey Up Me Pup!">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <!-- Google Fonts CSS -->
     <style>
@@ -21,24 +34,17 @@
     <!-- Font Awesome CSS -->
     <script src="https://kit.fontawesome.com/88d3278dbb.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../static/favicon/site.webmanifest">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
+    <link rel="manifest" href="../static/favicon/site.webmanifest">  
 </head>
 
+<!--Navigation banner-->
 <header>
     <div class="row no-gutters">
-        <a href="{% url 'home' %}" class="col-md-4 logo"></a>
+        <a href="{% url 'home' %}" class="col-md-4 logo" aria-label="Clicking here takes you to home page"></a>
         <div class="col-md-8">
             <div class="row no-gutters bg-color-title">
                 <div class="col heading">
@@ -50,26 +56,27 @@
                     <ul id="nav" class="list-inline menucontainer">
                         <li class="col-3 ui-menu-color-home list-inline-item menuitem">
                             <a class="nav-link" aria-current="page"
-                                href="{% url 'home' %}">Home</a>
+                                href="{% url 'home' %}" aria-label="Cicking here takes you to the homepage">Home</a>
                         </li>
                         {% if user.is_authenticated %}
                         <li class="col-3 ui-menu-color-logout list-inline-item menuitem">
                             <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                                href="{% url 'account_logout' %}">Logout</a>
+                                href="{% url 'account_logout' %}" aria-label="Cicking here takes you to the logout page">Logout</a>
                         </li>
                         {% else %}
                         <li class="col-3 ui-menu-color-register list-inline-item menuitem">
                             <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                                href="{% url 'account_signup' %}">Register</a>
+                                href="{% url 'account_signup' %}" aria-label="Cicking here takes you to the register page">Register</a>
                         </li>
                         <li class="col-3 ui-menu-color-login list-inline-item menuitem">
                             <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
-                                href="{% url 'account_login' %}">Login</a>
+                                href="{% url 'account_login' %}" aria-label="Cicking here takes you to the login page">Login</a>
                         </li>
                         {% endif %}
                     </ul>
                 </div>
             </div>
+            <!--About us section-->
             <div class="row no-gutters bg-color-subtitle">
                 <div class = "col subheading">
                 <h3 class="subtitle">Who are we?</h3>
@@ -82,7 +89,6 @@
                 </p>
                 </div>
             </div>
-
         </div>
     </div>
 </header>
@@ -102,11 +108,9 @@
 
 
 <main class="flex-shrink-0 main-bg">
-
     {% block content %}
     <!-- Content Goes here -->
     {% endblock content %}
-
 </main>
 
 
@@ -114,16 +118,17 @@
 
 <footer class="container-fluid">
     <div id="footer-details" class="row">
-        <div class="col-12">
+        <div class="col-12" class="dog-socials">
             <p>
             <a href="https://www.jerrygreendogs.org.uk/rehoming-services/nottinghamshire-centre/" target="_blank"
             aria-label="Link to Jerry Green's dog rescue"><i class="fa-solid fa-dog"></i></a>
             <a href="https://rspca-nottinghamandnotts.org.uk/" target="_blank"
             aria-label="Link to RSPCA Nottingham website"><i class="fa-solid fa-bowl-food"></i></a>
             <a href="https://www.eastmidlandsdogrescue.org/" target="_blank"
-            aria-label="Link to East Midland's dog rescue"><i class="fa-solid fa-bone"></i></a></p>
-
-
+            aria-label="Link to East Midland's dog rescue"><i class="fa-solid fa-bone"></i></a>
+            </p>
+        </div>
+        <div>
             {% if user.is_authenticated %}
             <p class="text-end m-3">You are logged in as {{ user }}</p>
             {% else %}
@@ -131,7 +136,6 @@
             {% endif %}
         </div>
     </div>
-
 </footer>
 
 <!--JavaScript-->

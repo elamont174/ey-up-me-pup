@@ -1,6 +1,6 @@
 # Ey Up Me Pup!
 ![Homepage screenshot](static/images/homepage.png)
-Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp.com/).
+- Deployed project can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp.com/).
 
 #### A note on the name
 "Ey Up Me Duck" is a commonly used phrase in the East Midlands (including Nottingham). It is a term of endearment which essentially means "hello my dear". 'Ey Up Me Pup!' is a play on words on this popular phrase. 
@@ -131,12 +131,18 @@ There is a short paragraph explaining the aims of the website and an attractive 
 - ![Admin panel screenshot 1](static/images/admin-comments.png)
 - ![Admin panel screenshot 2](static/images/admin-posts.png)
 
-### 'Socials'
+### Footer
 - In the footer, it is common to have icons leading to a companies social media pages such as Facebook, Instagram and X. As 'Ey Up Me Pup!' does not have any socials, I chose to put three dog related icons in the footer instead, each of which leads to a different Nottinghamshire based dog-linked charity when clicked.
 - !['Socials' footer screenshot](static/images/socials.png)
+- 
+- ![Loggied in footer screenshot](static/images/footer.png)
 
 ## Database
 - I used Code Institute's PostgreSQL database.
+
+### Database planning
+- ![EPR diagram](static/images/epr.png.png)
+
 ### Creating a database
 1. Navigate to [PostgreSQL](https://dbs.ci-dbs.net/) from Code Institute.
 2. Enter your student email address in the input field provided.
@@ -148,6 +154,7 @@ There is a short paragraph explaining the aims of the website and an attractive 
 ## Deployment
 - The website was deployed to Heroku and can be found [here](https://ey-up-me-pup-44c5def591d6.herokuapp.com/).
 ### Heroku
+* Heroku is a cloud platform that lets developers create, deploy, monitor and manage apps.
 - You will need a Heroku log-in to be able to deploy a website to Heroku.
 - Once you have logged into Heroku:
 1. Click 'New' > 'Create new app'
@@ -156,7 +163,7 @@ There is a short paragraph explaining the aims of the website and an attractive 
 4. Add a key of 'DISABLE_COLLECTSTATIC' with a value of '1'.
 5. Add a key of 'DATABASE_URL' - the value will be the URL you were emailed when creating your database.
 6. Add a key of 'SECRET_KEY' - the value will be any random secret key (google 'secret key generator' and use it to generate a random string of numbers, letters and characters)
-7. In your code you will need to install project requirements:
+7. In your terminal, type the code you will need to install project requirements:
 - pip3 install gunicorn~=20.1 
 - pip3 freeze --local > requirements.txt
 8. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
@@ -193,8 +200,6 @@ There is a short paragraph explaining the aims of the website and an attractive 
 - GitHub was used to host the repository and version control.
 - Heroku was the hosting platform.
 
-### Database planning
-- ![EPR diagram](static/images/epr.png.png)
 
 ## Testing
 - Please see [TESTING.md](TESTING.md) file for all testing.

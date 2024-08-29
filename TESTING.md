@@ -31,10 +31,6 @@
 | Staff review       | Edit a review           | Pressing 'Edit' will open the 'Edit your review' page in a new tab                                                                                                                                                                                        | PASS      |                                                                                                                                            |
 | Edit a review page | Edit a review           | Entering a review/rating and pressing submit will update review needing edited                                                                                                                                                                            | PASS      |                                                                                                                                            |
 
-## Bugs
-- Initially there were going to be multiple reviews for one location and I based the slug off of the location name. I later realised that thiswould mean that there could be identical slugs which would cause major problems. I changed the concept so that there was one central staff review that the slug could be based on and then multiple reviews could be added to this central post. At first I thought to fix this by having a 'review tagline' which the slug would be based on but further developed this idea. 
-- When adding the 'edit' feature I initially tried using JavaScript to populate the text-box with the initial comment and then update it. I then changed this to use Views instead. 
-- When adding Summernote to the review function, initially it was not showing up at all. After changing the Debug setting it then worked.
 
 ## Code validators
 ### HTML
@@ -60,7 +56,7 @@
 #### Edit review page
 - ![Edit review validator screenshot](static/images/html-vali-home.png)
 
-### CSS
+### CSS custom code
 - The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
 - ![CSS validator screenshot](static/images/css-vali.png)
 
@@ -91,12 +87,13 @@
 - ![PEP8 screenshot](static/images/pep8-models.png)
 - settings.py
 - ![PEP8 screenshot](static/images/pep8-settings.png)
-- urls.py
-- ![PEP8 screenshot](static/images/pep8-urls.png)
+- ey-up/urls.py
 - ![PEP8 screenshot](static/images/pep8-urls-ey-up.png)
+- pup_review/urls.py
+- ![PEP8 screenshot](static/images/pep8-urls.png)
 - views.py
 - ![PEP8 screenshot](static/images/pep8-views.png)
-- Even though one line was considered too long by PEP8 (highlighted), I decided that the readability of the code was better when left on the same line, since it was very close to the accepted limit.
+- Even though one line was considered too long by PEP8 (highlighted), I decided that the readability of the code was better when left on the same line, since it was very close to the accepted limit. Even though error exists, the app still functions. 
 - wsgi.py
 - ![PEP8 screenshot](static/images/pep8-wsgi.png)
 
@@ -144,3 +141,8 @@
 - ![Microsoft Edge screenshot](static/images/edge.png)
 - The site was tested on Opera:
 - ![Opera screrenshot](static/images/opera.png)
+
+## Bugs
+- Initially there were going to be multiple reviews for one location and I based the slug off of the location name. I later realised that thiswould mean that there could be identical slugs which would cause major problems. I changed the concept so that there was one central staff review that the slug could be based on and then multiple reviews could be added to this central post. At first I thought to fix this by having a 'review tagline' which the slug would be based on but further developed this idea. 
+- When adding the 'edit' feature I initially tried using JavaScript to populate the text-box with the initial comment and then update it. I then changed this to use Views instead. 
+- When adding Summernote to the review function, initially it was not showing up at all. After changing the Debug setting it then worked.

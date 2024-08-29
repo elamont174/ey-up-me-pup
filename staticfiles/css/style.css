@@ -15,6 +15,11 @@ body {
     background-color: #926d4c;
     font-family: "Alegreya Sans", sans-serif;
     font-size: 20px; 
+    min-height: 100vh;
+}
+
+main {
+    background-color: #926d4c;
 }
 
 /* ----- Colours */
@@ -98,14 +103,11 @@ div.row.no-gutters {
 }
 
 .nav-link:hover{
-    color: #87a8ce;
+    color: #bd8130;
 }
 
 /* ----- Review cards*/
 
-.card {
-    border: 0;
-}
 .card-body {
     color: #cead87;
     background-color: #3a4b46;
@@ -113,12 +115,15 @@ div.row.no-gutters {
     font-family: "Alegreya Sans", sans-serif;
 }
 
+div.card.mb-4 {
+    background-color: #3a4b46;
+}
+
 a.post-link {
     color: #cead87;
     text-decoration: none;
     font-family: "Shantell Sans", sans-serif;
     max-width: 500px;
-
 }
 
 a.post-link:hover {
@@ -129,6 +134,7 @@ a.card-box {
     color: #cead87;
     text-decoration: none;
     font-family: "Alegreya Sans", sans-serif;
+    background-color: #3a4b46;
 }
 
 .card-box:hover {
@@ -218,6 +224,12 @@ button#submit-button.btn.btn-signup.btn-lg {
     margin-bottom: 20px;
     font-size: 20px;
     font-family: "Shantell Sans", sans-serif;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+button#submit-button.btn.btn-signup.btn-lg:hover {
+    background-color: #926d4c;
 }
 
 /* ----- Sign-out page */
@@ -248,6 +260,10 @@ button.btn.btn-signup.right {
     border-color: #926d4c;
     margin-bottom: 20px;
     font-size: 15px;
+}
+
+button.btn.btn-signup.right:hover{
+    background-color: #926d4c;
 }
 
 /* Register page */
@@ -286,11 +302,6 @@ div#div_id_your_review.mb-3, div#div_id_your_rating.mb-3 {
     margin-right: 20%;
 }
 
-button#submit-button.btn.btn-signup.btn-lg {
-    margin-left: 40%;
-    margin-right: 40%;
-}
-
 div.p-2.user_reviews.faded a{
     margin-left: 30%;
 }
@@ -317,6 +328,17 @@ footer i {
     color: #cead87;
     margin: 10px;
     font-size: 25px;
+}
+
+footer i:hover {
+    color: #8392a5;
+}
+
+div#footer-details.row{
+    background-color: #3a4b46;
+    color: #cead87;
+    min-height: 50px;
+    text-align: center;
 }
 
 /* ----- Main Content */
