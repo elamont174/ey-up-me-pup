@@ -14,12 +14,19 @@
 body {
     background-color: #926d4c;
     font-family: "Alegreya Sans", sans-serif;
-    font-size: 20px; 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: #926d4c;
 }
 
 /* ----- Colours */
 
-.bg-color-title, .bg-color-subtitle {
+.bg-color-title,
+.bg-color-subtitle {
     background-color: #3a4b46;
 }
 
@@ -28,9 +35,11 @@ body {
 
 header {
     margin: 0;
+    background-color: #926d4c;
 }
 
-.heading, .subheading {
+.heading,
+.subheading {
     margin-left: 50px;
 }
 
@@ -50,7 +59,7 @@ header {
     margin-bottom: 50px;
 }
 
-i .fa-paw{
+i .fa-paw {
     font-size: 40px;
 }
 
@@ -97,15 +106,12 @@ div.row.no-gutters {
     font-weight: 500;
 }
 
-.nav-link:hover{
-    color: #87a8ce;
+.nav-link:hover {
+    color: #bd8130;
 }
 
 /* ----- Review cards*/
 
-.card {
-    border: 0;
-}
 .card-body {
     color: #cead87;
     background-color: #3a4b46;
@@ -113,12 +119,15 @@ div.row.no-gutters {
     font-family: "Alegreya Sans", sans-serif;
 }
 
+div.card.mb-4 {
+    background-color: #3a4b46;
+}
+
 a.post-link {
     color: #cead87;
     text-decoration: none;
     font-family: "Shantell Sans", sans-serif;
     max-width: 500px;
-
 }
 
 a.post-link:hover {
@@ -129,6 +138,7 @@ a.card-box {
     color: #cead87;
     text-decoration: none;
     font-family: "Alegreya Sans", sans-serif;
+    background-color: #3a4b46;
 }
 
 .card-box:hover {
@@ -137,7 +147,7 @@ a.card-box {
 }
 
 a.page-link {
-    color:#cead87;
+    color: #cead87;
     background-color: #926d4c;
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 700;
@@ -145,8 +155,8 @@ a.page-link {
     margin-bottom: 0;
 }
 
-a.page-link:hover{
-    color:#926d4c;
+a.page-link:hover {
+    color: #926d4c;
     background-color: #cead87;
     font-family: "Alegreya Sans", sans-serif;
     border: 0;
@@ -165,7 +175,7 @@ h1.post-location_name {
 }
 
 div.post-card-body p {
-    margin: 20px 100px 50px 100px;
+    margin: 20px 5% 50px 5%;
     font-family: "Alegreya Sans", sans-serif;
 }
 
@@ -173,7 +183,8 @@ div#div_id_your_review.mb-3 {
     font-family: "Alegreya Sans", sans-serif;
 }
 
-i.fa-comments, strong.text-secondary {
+i.fa-comments,
+strong.text-secondary {
     color: #292220;
 }
 
@@ -218,11 +229,19 @@ button#submit-button.btn.btn-signup.btn-lg {
     margin-bottom: 20px;
     font-size: 20px;
     font-family: "Shantell Sans", sans-serif;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+button#submit-button.btn.btn-signup.btn-lg:hover {
+    background-color: #926d4c;
 }
 
 /* ----- Sign-out page */
 
-div.signout-card, div.signin-card, div.signin-card p {
+div.signout-card,
+div.signin-card,
+div.signin-card p {
     background-color: #cead87;
     text-align: center;
     margin: 20px 100px 20px 100px;
@@ -232,12 +251,16 @@ div.signout-card, div.signin-card, div.signin-card p {
 }
 
 
-div.signout-card h3, div.signout-card form, div.signin-card h3, div.signin-card form {
+div.signout-card h3,
+div.signout-card form,
+div.signin-card h3,
+div.signin-card form {
     font-family: "Shantell Sans", sans-serif;
     font-size: 25px;
 }
 
-div.signout-card form, div.signin-card form {
+div.signout-card form,
+div.signin-card form {
     font-size: 15px;
     border-radius: 1px;
     border-color: #3a4b46;
@@ -248,6 +271,10 @@ button.btn.btn-signup.right {
     border-color: #926d4c;
     margin-bottom: 20px;
     font-size: 15px;
+}
+
+button.btn.btn-signup.right:hover {
+    background-color: #926d4c;
 }
 
 /* Register page */
@@ -267,7 +294,7 @@ button.signup-btn {
     margin: 20px;
     font-size: 20px;
     font-family: "Shantell Sans", sans-serif;
-    background-color:#926d4c;
+    background-color: #926d4c;
 }
 
 /* -----Edit reviews */
@@ -281,17 +308,13 @@ div.post-card-body h3 {
     padding: 20px;
 }
 
-div#div_id_your_review.mb-3, div#div_id_your_rating.mb-3 {
+div#div_id_your_review.mb-3,
+div#div_id_your_rating.mb-3 {
     margin-left: 20%;
     margin-right: 20%;
 }
 
-button#submit-button.btn.btn-signup.btn-lg {
-    margin-left: 40%;
-    margin-right: 40%;
-}
-
-div.p-2.user_reviews.faded a{
+div.p-2.user_reviews.faded a {
     margin-left: 30%;
 }
 
@@ -301,7 +324,61 @@ div#msg.alert.success.alert-dismissible.fade.show {
     color: #3a4b46;
     background-color: #cead87;
     margin: 0;
+    text-align: center;
+    font-family: "Alegreya Sans", sans-serif;
 }
+
+/* ----- Modal */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 /* ----- Footer */
 
@@ -310,6 +387,7 @@ footer {
     color: #cead87;
     min-height: 50px;
     text-align: center;
+    margin-top: -10px;
 }
 
 footer i {
@@ -318,10 +396,20 @@ footer i {
     font-size: 25px;
 }
 
+footer i:hover {
+    color: #8392a5;
+}
+
+div#footer-details.row {
+    background-color: #3a4b46;
+    color: #cead87;
+    min-height: 50px;
+    text-align: center;
+}
+
 /* ----- Main Content */
 
 .main-bg {
     background-color: #926d4c;
+    max-height: 100%;
 }
-
-

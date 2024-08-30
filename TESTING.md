@@ -143,6 +143,7 @@
 - ![Opera screrenshot](static/images/opera.png)
 
 ## Bugs
+- When users want to Edit their user reviews, I wanted to pre-populate the Edit box with their original comment. I tried this in many different ways, using views and JavaScript, searching the internet for many different solutions but could not solve this issue. Instead, when the user clicks Edit, they are taken to a new tab so that they can still read their initial comment and copy it if they want. The Edit functionality still works and users are able to Edit their comments. Editing can also easily be achieved by the superuser in the admin panel. 
 - Initially there were going to be multiple reviews for one location and I based the slug off of the location name. I later realised that thiswould mean that there could be identical slugs which would cause major problems. I changed the concept so that there was one central staff review that the slug could be based on and then multiple reviews could be added to this central post. At first I thought to fix this by having a 'review tagline' which the slug would be based on but further developed this idea. 
 - When adding the 'edit' feature I initially tried using JavaScript to populate the text-box with the initial comment and then update it. I then changed this to use Views instead. 
 - When adding Summernote to the review function, initially it was not showing up at all. After changing the Debug setting it then worked.
