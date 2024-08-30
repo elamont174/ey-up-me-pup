@@ -134,14 +134,15 @@ There is a short paragraph explaining the aims of the website and an attractive 
 ### Footer
 - In the footer, it is common to have icons leading to a companies social media pages such as Facebook, Instagram and X. As 'Ey Up Me Pup!' does not have any socials, I chose to put three dog related icons in the footer instead, each of which leads to a different Nottinghamshire based dog-linked charity when clicked.
 - !['Socials' footer screenshot](static/images/socials.png)
-- 
-- ![Loggied in footer screenshot](static/images/footer.png)
+- The footer also contains a message showing who you are logged in as or that you are not logged in. 
+- ![Logged in footer screenshot](static/images/footer.png)
 
 ## Database
 - I used Code Institute's PostgreSQL database.
 
 ### Database planning
-- ![EPR diagram](static/images/epr.png.png)
+- I used an Entity Relationship Diagram to plan my database.
+- ![ERD diagram](static/images/epr.png.png)
 
 ### Creating a database
 1. Navigate to [PostgreSQL](https://dbs.ci-dbs.net/) from Code Institute.
@@ -226,13 +227,11 @@ There is a short paragraph explaining the aims of the website and an attractive 
 - All review images were linked from Google Images using their Image URL.
 - [Google Fonts](https://fonts.google.com/) were used to source the font styles.
 - Balsamiq was used to create the design wireframe.
-- Microsoft PowerPoint was used to create the EPR image.
+- Microsoft PowerPoint was used to create the ERD image.
 - [TabletoMarkdown.com](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/) was used to create the tables in TESTING.md from a Microsoft Excel spreadsheet that I created.
 - Google Extension 'Responsive Viewer' was used to create the screenshots for the Responsiveness section of TESTING.md.
 
 ## Acknowledgements
 - My mentor Julia has, as always, been an incredible support. 
 - I have to thank the Code Institute Student Care team for looking after me so well during a period of intense illness.
-- I have made some wonderful friends through hackathons who allowed me to read through their READMEs and look at their projects when I was planning out my project at the beginning. Thank you Stephen Dawson, Rachel O'Donnell and Kyle Clow. 
-- My long-suffering husband, Malcolm Lamont, for... everything.
-- My dad, Calum Weir, for feeding me and letting me borrow his computer monitor as a second screen. 
+- I have made some wonderful friends through hackathons who allowed me to read through their READMEs and look at their projects when I was planning out my project at the beginning. Thank you Stephen Dawson, Rachel O'Donnell and Kyle Clow.
